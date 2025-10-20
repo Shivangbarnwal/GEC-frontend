@@ -34,7 +34,7 @@ const Translator = () => {
   const handleTranslate = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/openai/translate",
+        "https://gec-backend1.onrender.com/api/openai/translate",
         {
           text: inputText,
           targetLanguage,
